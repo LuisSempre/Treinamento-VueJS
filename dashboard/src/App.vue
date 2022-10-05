@@ -1,6 +1,8 @@
 <template>
+<div>
   <modal-factory />
   <router-view />
+</div>
 </template>
 
 <script>
@@ -8,7 +10,7 @@ import { watch } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import services from "./services";
 import { setCurrentUser } from "./store/user";
-import { ModalFactory } from "./components/ModalFactory";
+import ModalFactory from "./components/ModalFactory.vue";
 
 export default {
   components: { ModalFactory },

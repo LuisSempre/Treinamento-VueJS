@@ -26,9 +26,9 @@ import {
   onBeforeUnmount,
   defineAsyncComponent,
 } from "vue";
-import useModal from "../../hooks/useModal";
+import useModal from "../hooks/useModal";
 
-const ModalLogin = defineAsyncComponent(() => import("../ModalLogin"));
+const ModalLogin = defineAsyncComponent(() => import("./ModalLogin"));
 const ModalAccountCreate = defineAsyncComponent(() =>
   import("../ModalCreateAccount")
 );
